@@ -1,4 +1,5 @@
 class Solution {
+    
     /*
      Time Compelexity: O(n)
      Space Complexity = O(1)

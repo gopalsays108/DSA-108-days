@@ -1,28 +1,28 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        
-        int count =0;
-        
-        for(int i =0;i<grid.length;i++){
-            for(int j =0; j < grid[i].length;j++){
+        int count = 0;
+        //System.out.println(grid.length + "  " + grid[0].length); 4 5
+        for(int i  = 0; i< grid.length; i++){
+            for(int j = 0;j < grid[i].length; j++){
                 if(grid[i][j] == '1'){
                     count++;
-                    callBSF(grid,i,j);
+                    countIsland(grid, i, j);
                 }
             }
         }
-        
         return count;
     }
     
-    public void callBSF(char[][] grid, int i, int j){
-        if(i<0 || i>=grid.length ||j<0 ||j>=grid[i].length || grid[i][j] == '0') return;
+    public void countIsland(char[][] grid, int i, int j){
+        //base case check
+        if(i < 0 || i >= grid.length || j < 0 || j >= grid[i].length || grid[i][j] == '0')
+            return;
         
-        grid[i][j] ='0';
+        grid[i][j] = '0';
         
-        callBSF(grid,i+1,j); //up
-        callBSF(grid,i-1,j); // down
-        callBSF(grid,i,j-1); //left
-        callBSF(grid,i,j+1); //right
+        countIsland(grid, i-1,j); //up
+        countIsland(grid, i+1,j); //down
+        countIsland(grid, i , j+1);// right
+        countIsland(grid, i, j-1); // left
     }
 }

@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/3sum-closest/
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
         int result = nums[0] + nums[1] + nums[nums.length-1];

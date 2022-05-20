@@ -52,7 +52,7 @@ class Solution
     {
         // add your code here
          /* //First solution Theta (n*d)
-        //thera(1) aux space
+        //thera(1) aux space  
         for(int i =0; i< d;i++){
             int temp = arr[0];
             

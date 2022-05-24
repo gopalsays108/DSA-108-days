@@ -1,4 +1,4 @@
-// https://www.codechef.com/problems/AVGARR 
+// https://www.codechef.com/problems/AVGARR  
 /* package codechef; // don't place package name! */
 
 import java.util.*;

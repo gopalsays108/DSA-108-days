@@ -89,7 +89,7 @@ class Solution
 
          /*
             Third Solution
-            TC: Theta(n)
+            TC: Theta(n) 
             Space: Theta (1) aux
          */
         if(d > n) d = d % n;
